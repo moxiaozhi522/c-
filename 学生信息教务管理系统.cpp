@@ -190,7 +190,7 @@ STU* Create_student1(STU* head) {//添加学生信息的函数
 		gets_s(p1->name);
 		p1->sum = 0;
 		for (j = 0; j < course_num; j++) {
-			printf("请输入%s成绩：", class_num[i].course_name);
+			printf("请输入%s成绩：", class_num[j].course_name);
 			scanf_s("%lf", &p1->course[j].course_score);
 			if (p1->course[j].course_score >= 90)
 				class_num[j].rank[0]++;
